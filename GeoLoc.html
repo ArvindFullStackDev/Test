@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+$('#txtbox').focusout(function(){
+   $('#id5').attr('tabindex', 5);
+   $('#id6').attr('tabindex', 6);
+   $('#id7').attr('tabindex', 7);
+   $('#id1').focus();  
+ });  
+  
+});
+</script>
+</head>
+<body>
+
+<input type="text" id="txtbox" />
+<input type="text" id="id1" tabindex="1" />
+<input type="text"  tabindex="3" />
+<input type="text"  tabindex="2" />
+
+<input type="text" id="id6"  />
+<input type="text"  id="id5" />
+<input type="text"  id="id7" />
+
+
+
+</body>
+</html>
